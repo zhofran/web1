@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<table class="table" align="center">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Judul</th>
+      <th scope="col">Move</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Kartun</td>
+      <td><%= link_to "Pindah Kuy", {controller: "home", action: "kartun"} %></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Film</td>
+      <td><%= link_to "Pindah Kuy", {controller: "home", action: "film"} %></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Artis</td>
+      <td><%= link_to "Pindah Kuy", {controller: "home", action: "artis"} %></td>
+    </tr>
+  </tbody>
+</table>

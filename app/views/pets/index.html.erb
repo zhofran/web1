@@ -1,0 +1,7 @@
+<table border="1">
+	<tr>
+		<%= @rpets.each do |pets| %>
+			<td><%= linK_to pets.name, pets_path(pets)%></td>
+		<%end%>
+	</tr>
+</table>
