@@ -1,0 +1,18 @@
+<%= form_for(@film) do |n| %>
+	<%= n.label :title %>
+	<%= n.text_field :title %>
+	</br>
+	</br>
+
+	<%= n.label :year %>
+	<%= n.text_field :year %>
+	</br>
+	</br>
+	
+	<%= n.label :description %>
+	<%= n.text_area :description %>
+	<br>
+	<br>
+
+	<%= n.submit "Simpan" %>
+<% end %>

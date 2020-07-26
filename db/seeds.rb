@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Book.create(title: "Buku Java", price: 150000, page: 150)
-Book.create(title: "Buku Python", price: 150000, page: 150)
-Book.create(title: "Buku Golang", price: 150000, page: 150)
-Book.create(title: "Buku Flutter", price: 150000, page: 150)
-Book.create(title: "Buku C++", price: 150000, page: 150)
+Film.create(title: "Jumanji", year: 2019, description: "Adventure", director_id: 1)
+Film.create(title: "Avengers: Infinity War", year: 2019, description: "Fantasy", director_id: 1)
+Film.create(title: "Black Panther", year: 2019, description: "Sci-Fi", director_id: 2)
+Film.create(title: "Iron-man 1", year: 2011, description: "Sci-Fi", director_id: 2)
+Film.create(title: "Captain America: The Winter Soldier", year: 2013, description: "Action", director_id: 3)

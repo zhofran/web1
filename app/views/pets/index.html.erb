@@ -1,7 +1,12 @@
 <table border="1">
-	<tr>
-		<%= @rpets.each do |pets| %>
-			<td><%= linK_to pets.name, pets_path(pets)%></td>
-		<%end%>
-	</tr>
+	<% @sapi.each do |z| %>
+		<tr>
+			<td>
+				<%= z.name %>
+			</td>
+			<td>
+				<%= link_to "Show", z %>	
+			</td>
+		</tr>
+	<% end %>
 </table>

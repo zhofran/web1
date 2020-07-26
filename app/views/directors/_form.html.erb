@@ -1,0 +1,18 @@
+<%= form_for(@d) do |j| %>
+	<%= j.label :name %>
+	<%= j.text_field :name %>
+	<br>
+	<br>
+
+	<%= j.label :Age %>
+	<%= j.text_field :old %>
+	<br>
+	<br>
+	
+	<%= j.label :address %>
+	<%= j.text_area :address %>
+	<br>
+	<br>
+	
+	<%= j.submit "Simpan" %>
+<% end %>

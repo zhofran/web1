@@ -1,0 +1,22 @@
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+
+
+<% if flash[:alert].present? %>
+	<%= flash[:alert] %>
+<% end %>
+<table>
+	<tr>
+		<td>Nama Sutradara</td>
+		<td colspan="3" align="center">Action</td>
+	</tr>
+	<% @d.each do |z| %>
+	<tr>
+		<td><%= z.name %></td>
+		<td><%= link_to "Show", director_path(z) %></td>
+		<td><%= link_to "Edit", edit_director_path(z) %></td>
+		<td><%= link_to "Delete", director_path(z), method: :delete, data: {confirm: "Are You Sure ??"} %></td>
+	</tr>
+	<% end %>
+</table>
+
+<button><%= link_to "Tambah Sutradara", new_director_path %></button>

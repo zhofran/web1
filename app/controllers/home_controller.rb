@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	render 'tes'
+    @hasil = "saya zhofran"
   end
 
   def coba

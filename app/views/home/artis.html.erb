@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -25,6 +23,11 @@
       <th scope="row">3</th>
       <td>Dwayne Johnson</td>
       <td><%= image_tag 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbarbaraiweins.com%2Fdwayne-johnson-net-worth%2F&psig=AOvVaw3IOXNEhFa2nY6Mq4DkK7g0&ust=1594652878187000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjqrIX_x-oCFQAAAAAdAAAAABAE' %></td>
+    </tr>
+    <tr>
+    	<td colspan="3">
+    		<button type="button" class="btn btn-primary btn-lg btn-block"><%= link_to "Back", {controller: "demo", action: "index"} %></button>
+    	</td>
     </tr>
   </tbody>
 </table>

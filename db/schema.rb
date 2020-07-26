@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_12_071217) do
+ActiveRecord::Schema.define(version: 2020_07_21_072426) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,9 +24,48 @@ ActiveRecord::Schema.define(version: 2020_07_12_071217) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "directors", force: :cascade do |t|
+    t.string "name"
+    t.text "address"
+    t.integer "old"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "dompets", force: :cascade do |t|
+    t.integer "balance"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "films", force: :cascade do |t|
+    t.string "title"
+    t.integer "year"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "director_id"
+  end
+
+  create_table "owners", force: :cascade do |t|
+    t.string "name"
+    t.text "address"
+    t.integer "age"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.integer "old"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "username"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

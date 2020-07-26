@@ -1,0 +1,9 @@
+<% if flash[:alert].present? %>
+	<%= flash[:alert] %>
+<% end %>
+Title : <%= @film.title %></br>
+Year  : <%= @film.year %></br>
+Description  : <%= @film.description %>
+</br>
+</br>
+<button><%= link_to "Back", films_path %></button>

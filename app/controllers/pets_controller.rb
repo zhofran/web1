@@ -1,9 +1,9 @@
 class PetsController < ApplicationController
 	def index
-		@pets = Pets.all
+		@sapi = Pet.all
 	end
 
 	def show
-		@pets = Pets.find(params[:id])
+		@sapu = Pet.find(params[:id])
 	end
 end
